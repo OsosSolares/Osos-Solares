@@ -6,71 +6,43 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    text-align: center;
 }
 
 header {
     background-color: #4caf50;
     color: #fff;
     padding: 1rem;
-    text-align: center;
 }
 
-nav ul {
+h2 {
+    color: #4caf50;
+    margin-top: 2rem;
+}
+
+ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+    padding: 0;
 }
 
-nav a {
-    color: #fff;
+li {
+    margin: 0.5rem 0;
+}
+
+a {
+    color: #00796b;
     text-decoration: none;
 }
 
-section {
-    padding: 2rem;
-    text-align: center;
-}
-
-button {
-    padding: 0.5rem 1rem;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #388e3c;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-input, textarea {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+a:hover {
+    text-decoration: underline;
 }
 
 footer {
+    margin-top: 2rem;
+    padding: 1rem;
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-
-.whatsapp-links a {
-    color: #25D366;
-    text-decoration: none;
-    font-weight: bold;
 }
