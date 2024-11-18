@@ -8,18 +8,41 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    text-align: center;
 }
 
 header {
     background-color: #4caf50;
     color: #fff;
     padding: 1rem;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+#info {
+    width: 60%;
+}
+
+aside {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.oso-imagen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 h2 {
     color: #4caf50;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 ul {
@@ -45,4 +68,5 @@ footer {
     padding: 1rem;
     background-color: #333;
     color: #fff;
+    text-align: center;
 }
