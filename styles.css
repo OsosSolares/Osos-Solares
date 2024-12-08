@@ -8,13 +8,25 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
     background-color: #4caf50;
     color: #fff;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
+    border-bottom: 4px solid #388e3c;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: lighter;
 }
 
 .content {
@@ -22,10 +34,43 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     padding: 2rem;
+    flex-wrap: wrap; /* Asegura que el contenido sea responsive */
 }
 
 #info {
     width: 60%;
+}
+
+#info h2 {
+    color: #4caf50;
+    margin-top: 1.5rem;
+    border-bottom: 2px solid #4caf50;
+    padding-bottom: 0.5rem;
+}
+
+#info p {
+    margin: 0.5rem 0;
+}
+
+#info ul {
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+#info li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+#info a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#info a:hover {
+    text-decoration: underline;
+    color: #004d40;
 }
 
 aside {
@@ -38,35 +83,61 @@ aside {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-h2 {
-    color: #4caf50;
-    margin-top: 1.5rem;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin: 0.5rem 0;
-}
-
-a {
-    color: #00796b;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
     margin-top: 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #333;
     color: #fff;
     text-align: center;
+    border-top: 4px solid #4caf50;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #81c784;
+}
+
+/* Nueva sección para la dirección */
+.address {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #388e3c;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    #info,
+    aside {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
 }
