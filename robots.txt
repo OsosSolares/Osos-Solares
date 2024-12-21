@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://osossolares.github.io/Oso-Solares/sitemap.xml
